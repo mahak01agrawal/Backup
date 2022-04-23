@@ -1,0 +1,32 @@
+<app-header></app-header>
+<app-nav-links></app-nav-links>
+<section class="products">
+
+    <h1 class="title"> <span>our products</span> <a href="#">view all >></a> </h1>
+
+    <div class="box-container">
+
+        <div class="box" *ngFor="let product of products">
+            <div class="icons">
+                <a *ngIf = "checkProduct(product._id)" (click)="addToCart(product._id)" id="{{product._id}}" #{{pacake._id}} [ngClass]="add2Cart"></a>
+
+            </div>
+            <div class="image">
+                <img src={{product.image}} alt="">
+            </div>
+            <div class="content">
+                <div class="price">PRICE ₹ {{product.price}} Only</div>
+                <h3>{{product.name}}</h3>
+                <span>QUANTITY {{product.stock}} </span>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<app-footer></app-footer>

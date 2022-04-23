@@ -1,0 +1,28 @@
+.contain{
+    padding-left: 70px;
+    padding-bottom: 20px;
+    gap: 1rem ;
+    display: -ms-grid;
+    display: grid;
+    /* -ms-grid-columns: (minmax(0.5px, 0.5fr)); */
+    grid-template-columns : repeat(auto-fit, minmax(5px, 1fr));
+  
+}
+.contain img{
+    padding-top:0px;
+    padding-left: 50px;
+    width:250px;
+    
+}
+.title-heading{
+    text-align: center; 
+ 
+   }
+   .title-heading span{
+     border: solid #779;
+     color: #ffa047;
+     font-size: 30px;
+     padding: 2px 20px;
+     box-shadow: -5px -10px 5px  rgba(255, 160, 71, 0.934);
+     border-radius: 20px;
+   }
